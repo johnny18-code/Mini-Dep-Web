@@ -1,6 +1,5 @@
 # main function here :)
 import json
-from nt import error
 import datetime as funcDate
 
 file_path = "accounts.json"
