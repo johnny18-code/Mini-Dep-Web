@@ -1,0 +1,24 @@
+{
+  "accounts": [
+    {
+      "name": "johnny",
+      "Balance": 369.0,
+      "Transactions": [
+        { "type": "Creation", "Amount": 123.0, "status": "successful" },
+        { "type": "Deposit", "amount": 123.0, "status": "successful" },
+        { "type": "Deposit", "amount": 123.0, "status": "successful" }
+      ]
+    },
+    {
+      "name": "suki-water-lou",
+      "Balance": 300.0,
+      "Transactions": [
+        { "type": "Creation", "amount": 100.0, "status": "successful" },
+        { "type": "Deposit", "amount": 100.0, "status": "successful" },
+        { "type": "Deposit", "amount": 100.0, "status": "successful" },
+        { "type": "Withdraw", "amount": 29.5, "status": "successful" },
+        { "type": "Deposit", "amount": 29.5, "status": "successful" }
+      ]
+    }
+  ]
+}

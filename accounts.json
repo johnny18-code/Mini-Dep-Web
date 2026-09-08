@@ -1,0 +1,56 @@
+{
+  "accounts": [
+    {
+      "name": "johnny",
+      "balance": 123.0,
+      "accountStatus": "Active",
+      "transactions": [
+        {
+          "amount": 123.0,
+          "date": "2026-09-09 01:20:10.861212",
+          "type": "Creation",
+          "status": "successfull"
+        }
+      ]
+    },
+    {
+      "name": "johnny2",
+      "balance": 123.0,
+      "accountStatus": "Active",
+      "transactions": [
+        {
+          "amount": 123.0,
+          "date": "2026-09-09 01:20:34.699172",
+          "type": "Creation",
+          "status": "successfull"
+        }
+      ]
+    },
+    {
+      "name": "strkter",
+      "balance": 123.0,
+      "accountStatus": "Active",
+      "transactions": [
+        {
+          "amount": 123.0,
+          "date": "2026-09-09 01:21:48.280871",
+          "type": "Creation",
+          "status": "successfull"
+        }
+      ]
+    },
+    {
+      "name": "johnny3",
+      "balance": 123.0,
+      "accountStatus": "Active",
+      "transactions": [
+        {
+          "amount": 123.0,
+          "date": "2026-09-09 01:25:04.426531",
+          "type": "Creation",
+          "status": "successfull"
+        }
+      ]
+    }
+  ]
+}
