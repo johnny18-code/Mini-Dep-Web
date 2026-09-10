@@ -1,6 +1,5 @@
 import json
 import datetime as funcDate
-from turtle import update
 
 file_path = "accounts.json"
 
