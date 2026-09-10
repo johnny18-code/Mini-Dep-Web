@@ -1,5 +1,3 @@
-from ast import arg
-from turtle import onclick
 import streamlit as st
 import functions
 import time
