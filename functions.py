@@ -27,14 +27,17 @@ def create_account(nameParm):
 def check_amount(amountParm):
     try:
         floatingAmount = float(amountParm)
-        return ("Valid", floatingAmount)
+        if floatingAmount <= 0:
+            return ("Invalid", amountParm)
+        else:
+            return ("Valid", floatingAmount)
     except ValueError as e:
         return ("Invalid", amountParm)
 
 
 ##############################################################################
 def insert_new_account(nameParm, amountParm):
-    
+
     type_C = "Creation"
     dateNow = funcDate.datetime.now()
     strDate = str(dateNow)
@@ -48,7 +51,7 @@ def insert_new_account(nameParm, amountParm):
                          "type": type_C,
                          "status": "successfull"
                      }]}
-   
+
     # open
     with open(file_path, mode="r") as readFile:
         dataLoad = json.load(readFile)
@@ -56,22 +59,11 @@ def insert_new_account(nameParm, amountParm):
     dataLoad["accounts"].append(formattedLoad)
 
     # rewrite
-    try: 
+    try:
         with open(file_path, mode="w") as reWriteFile:
-            json.dump(dataLoad,reWriteFile);
+            json.dump(dataLoad, reWriteFile)
         return "Success"
-    except error as e:
+    except OSError as e:
         print(f"{e}")
         return "Error"
 ##############################################################################
-  
-
-
-   
-
-
-
-
-
-
-
